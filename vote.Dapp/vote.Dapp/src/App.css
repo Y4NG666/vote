@@ -1,0 +1,261 @@
+/* 主应用样式 */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.App-header {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App-header h1 {
+  margin: 0;
+  color: #333;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  color: #666;
+}
+
+/* 钱包连接组件样式 */
+.wallet-connector {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.wallet-connector button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.wallet-connector button:hover {
+  background-color: #45a049;
+}
+
+.wallet-connector button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.wallet-info {
+  text-align: right;
+}
+
+.wallet-info .account,
+.wallet-info .network {
+  margin: 5px 0;
+}
+
+/* 创建提案组件样式 */
+.create-proposal {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.create-proposal h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.create-proposal button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.create-proposal button:hover {
+  background-color: #0069d9;
+}
+
+.create-proposal button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* 投票列表组件样式 */
+.proposals-list {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.proposals-list h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.proposal-card {
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.proposal-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.proposal-details {
+  margin: 15px 0;
+}
+
+.votes {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.yes-votes {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.no-votes {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.voting-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.voting-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.voting-actions button:first-child {
+  background-color: #28a745;
+  color: white;
+}
+
+.voting-actions button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+.voting-actions button:hover {
+  opacity: 0.9;
+}
+
+.voted-notice {
+  margin-top: 15px;
+  padding: 8px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  font-style: italic;
+}
+
+.close-proposal {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.status-message {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.status-message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.connect-notice {
+  grid-column: 1 / -1;
+  padding: 50px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #666;
+}
+
+.error {
+  color: #dc3545;
+  margin-top: 10px;
+}
+
+.success {
+  color: #28a745;
+  margin-top: 10px;
+}
+
+.loading, .empty {
+  padding: 20px;
+  text-align: center;
+  color: #666;
+} 
